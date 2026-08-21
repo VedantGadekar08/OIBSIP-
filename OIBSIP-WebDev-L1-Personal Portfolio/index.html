@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Gadekar | Full Stack Developer | Cloud & AI Enthusiast</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    },
+                    animation: {
+                        'spin-slow': 'spin 12s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans selection:bg-emerald-100 selection:text-emerald-900">
+
+    <!-- Header / Navbar -->
+    <header class="topbar sticky top-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm border-b border-gray-100">
+        <div class="brand text-emerald-700 font-extrabold tracking-wider">VEDANT GADEKAR</div>
+        <nav class="nav-links flex items-center justify-center gap-6" aria-label="Main navigation">
+            <a href="#" class="hover:text-emerald-700 transition-colors">HOME</a>
+            <a href="#about" class="hover:text-emerald-700 transition-colors">ABOUT</a>
+            <a href="#projects" class="hover:text-emerald-700 transition-colors">PROJECTS</a>
+            <a href="#contact" class="hover:text-emerald-700 transition-colors">CONTACT</a>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <main
+        class="hero flex flex-col md:flex-row items-center justify-between min-h-[calc(100vh-80px)] px-6 md:px-12 py-10 gap-8">
+        <section class="hero-copy md:w-7/12 flex flex-col justify-center z-10">
+            <span class="text-emerald-700 text-lg md:text-xl font-bold mb-2 block">👋 Hi, I am</span>
+            <h1 class="text-4xl md:text-6xl font-black text-gray-950 leading-tight mb-3">Vedant Gadekar</h1>
+            <h2 class="text-2xl md:text-3xl font-bold text-emerald-700 mb-4">Full Stack Developer | Cloud & AI
+                Enthusiast</h2>
+            <p class="text-gray-600 text-base md:text-lg max-w-xl leading-relaxed mb-6">
+                High-energy, results-oriented Full Stack Developer and Computer Science Engineering student with a
+                passion for building highly scalable web services and AI modernization initiatives. Proven ability to
+                operate with an agile mentality, consistently driving decisions and owning outcomes in fast-paced
+                environments.
+            </p>
+
+            <!-- Social Links -->
+            <div class="flex gap-4 mb-8" aria-label="Social media links">
+                <a href="https://www.linkedin.com/in/vedant-gadekar" target="_blank" rel="noopener noreferrer"
+                    class="bg-white text-blue-600 hover:bg-blue-600 hover:text-white p-3 rounded-xl shadow-md transition-all duration-300 hover:-translate-y-1">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/VedantGadekar08" target="_blank" rel="noopener noreferrer"
+                    class="bg-white text-gray-900 hover:bg-gray-900 hover:text-white p-3 rounded-xl shadow-md transition-all duration-300 hover:-translate-y-1">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/vedanttgadekar" target="_blank" rel="noopener noreferrer"
+                    class="bg-white text-pink-600 hover:bg-pink-600 hover:text-white p-3 rounded-xl shadow-md transition-all duration-300 hover:-translate-y-1">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-4">
+                <a class="px-6 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl shadow-lg transition-transform duration-200 hover:-translate-y-0.5"
+                    href="#contact">
+                    <i class="fa-solid fa-envelope mr-2"></i>Contact
+                </a>
+                <a class="px-6 py-3 bg-red-700 hover:bg-red-800 text-white font-bold rounded-xl shadow-lg transition-transform duration-200 hover:-translate-y-0.5"
+                    href="https://drive.google.com/file/d/1sZuDFE71AOetidaxkgFgjQvpWf_i3QC0/view?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer" id="downloadResume">
+                    <i class="fa-solid fa-file-pdf mr-2"></i>Resume
+                </a>
+            </div>
+        </section>
+
+        <!-- Developer Illustration (CSS Art from template) -->
+        <section class="hero-visual md:w-5/12 flex items-center justify-center">
+            <div class="scene">
+                <div class="monitor">
+                    <div class="monitor-screen">
+                        <div class="code-lines"></div>
+                    </div>
+                    <div class="monitor-stand"></div>
+                </div>
+                <div class="person">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arm arm-left"></div>
+                    <div class="arm arm-right"></div>
+                    <div class="laptop"></div>
+                </div>
+                <div class="gear gear-one"></div>
+                <div class="gear gear-two"></div>
+                <div class="floating-card card-one"></div>
+                <div class="floating-card card-two"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- About Me Section -->
+    <section class="min-h-screen px-6 md:px-12 py-20 bg-emerald-50/30" id="about">
+        <!-- Section Header -->
+        <div class="flex items-center gap-4 mb-12">
+            <hr class="h-1.5 w-16 bg-emerald-700 rounded-full border-0">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">&lt;About Me /&gt;</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- Left Side: Skills -->
+            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-emerald-50">
+                <div class="flex items-center gap-3 mb-8">
+                    <hr class="h-1 w-10 bg-emerald-700 rounded-full border-0">
+                    <h3 class="text-2xl font-bold text-gray-900">&lt;My Skills /&gt;</h3>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <!-- Java -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-solid fa-mug-hot text-amber-700 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">Java (EE)</span>
+                    </div>
+                    <!-- JavaScript -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-brands fa-js text-yellow-500 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">JavaScript</span>
+                    </div>
+                    <!-- React -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-brands fa-react text-sky-500 text-3xl mb-2 animate-spin-slow"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">React JS</span>
+                    </div>
+                    <!-- HTML & CSS -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-brands fa-html5 text-orange-500 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">HTML & CSS</span>
+                    </div>
+                    <!-- Relational SQL -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-solid fa-database text-blue-500 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">SQL Database</span>
+                    </div>
+                    <!-- NoSQL Database -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-solid fa-leaf text-green-500 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">NoSQL DB</span>
+                    </div>
+                    <!-- AWS Cloud -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-brands fa-aws text-orange-400 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">AWS Cloud</span>
+                    </div>
+                    <!-- DevOps & CI/CD -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-solid fa-infinity text-indigo-500 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">DevOps & CI/CD</span>
+                    </div>
+                    <!-- GenAI & LLMs -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-solid fa-brain text-purple-500 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">GenAI & LLMs</span>
+                    </div>
+                    <!-- Prompt Engineering -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles text-pink-500 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">Prompt Eng.</span>
+                    </div>
+                    <!-- Data Analysis -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-solid fa-chart-pie text-teal-600 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">Data Analysis</span>
+                    </div>
+                    <!-- Testing & TDD -->
+                    <div
+                        class="flex flex-col items-center p-4 bg-emerald-50/20 rounded-xl hover:bg-emerald-50 hover:scale-105 transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved text-red-500 text-3xl mb-2"></i>
+                        <span class="font-semibold text-gray-800 text-sm text-center">Unit Test / TDD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Bio, Education, Certifications -->
+            <div
+                class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-emerald-50 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <hr class="h-1 w-10 bg-emerald-700 rounded-full border-0">
+                        <h3 class="text-2xl font-bold text-gray-900">&lt;More about Me /&gt;</h3>
+                    </div>
+
+                    <div class="space-y-4 text-gray-700 leading-relaxed mb-6">
+                        <p>
+                            Hello! I'm <strong>Vedant Gadekar</strong>, currently pursuing my Bachelor of Engineering in
+                            Computer Science and Engineering at <strong>Sant Gadge Baba Amravati University</strong>
+                            (June 2023 - July 2027). I have a strong passion for tech and am actively building skills in
+                            web development, cloud architectures, and GenAI modernization.
+                        </p>
+                        <p>
+                            Recently, I completed an internship at <strong>Oasis Infobyte</strong>. My engineering
+                            skills cover building robust backend RESTful APIs using Java, designing relational SQL and
+                            NoSQL database schemas, and crafting dashboards in React.
+                        </p>
+                        <p>
+                            Alongside engineering, I am a sports lover and fitness enthusiast, which helps me stay
+                            disciplined, energetic, and focused. I am always eager to learn, grow, and collaborate on
+                            real-world projects.
+                        </p>
+                    </div>
+
+                    <!-- Education Mini Section -->
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h4 class="font-bold text-gray-900 mb-3"><i
+                                class="fa-solid fa-graduation-cap text-emerald-700 mr-2"></i>Education Highlights</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>
+                                <span class="font-semibold text-gray-800">B.E. Computer Science</span> (Pursuing) - Sant
+                                Gadge Baba Amravati University
+                            </li>
+                            <li>
+                                <span class="font-semibold text-gray-800">XII (HSC Board)</span> - Vidyaa Vikas <span
+                                    class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full text-xs font-semibold">82.8%</span>
+                            </li>
+                            <li>
+                                <span class="font-semibold text-gray-800">X (SSC Board)</span> - Rajeev Gandhi Military
+                                School <span
+                                    class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full text-xs font-semibold">86%</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Certifications Mini Section -->
+                    <div class="border-t border-gray-100 pt-6">
+                        <h4 class="font-bold text-gray-900 mb-3"><i
+                                class="fa-solid fa-certificate text-emerald-700 mr-2"></i>Specialized Certifications
+                        </h4>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span
+                                class="bg-emerald-50 text-emerald-800 border border-emerald-100 px-2.5 py-1 rounded-lg">Tata
+                                - GenAI Data Analytics</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 border border-emerald-100 px-2.5 py-1 rounded-lg">Prompt
+                                Engineering for Everyone</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 border border-emerald-100 px-2.5 py-1 rounded-lg">Deloitte
+                                Australia - Data Analytics</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 border border-emerald-100 px-2.5 py-1 rounded-lg">AI
+                                Foundations</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 border border-emerald-100 px-2.5 py-1 rounded-lg">AWS
+                                Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="min-h-screen px-6 md:px-12 py-20" id="projects">
+        <!-- Section Header -->
+        <div class="flex items-center gap-4 mb-12">
+            <hr class="h-1.5 w-16 bg-emerald-700 rounded-full border-0">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">&lt;My Projects /&gt;</h2>
+        </div>
+
+        <div class="space-y-12">
+            <!-- Project 1: Employee Management System -->
+            <div
+                class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden flex flex-col lg:flex-row hover:shadow-xl transition-shadow duration-300">
+                <!-- Left: Illustration -->
+                <div
+                    class="lg:w-1/2 bg-gradient-to-br from-emerald-700/10 to-teal-700/5 p-8 flex items-center justify-center min-h-[300px] border-r border-gray-100">
+                    <!-- Clean SVG Illustration of Employee Management -->
+                    <svg viewBox="0 0 800 500" class="w-full max-w-[450px] drop-shadow-md">
+                        <!-- Background Card Grid -->
+                        <rect x="50" y="50" width="700" height="400" rx="20" fill="#ffffff" stroke="#10b981"
+                            stroke-width="4" />
+                        <rect x="50" y="50" width="700" height="70" rx="20" fill="#047857" />
+                        <!-- Topbar dots -->
+                        <circle cx="90" cy="85" r="8" fill="#ef4444" />
+                        <circle cx="115" cy="85" r="8" fill="#f59e0b" />
+                        <circle cx="140" cy="85" r="8" fill="#10b981" />
+                        <text x="400" y="92" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff"
+                            text-anchor="middle">Dashboard - Employee Management</text>
+
+                        <!-- Employee List Rows -->
+                        <rect x="90" y="160" width="620" height="60" rx="10" fill="#f0fdf4" stroke="#dcfce7"
+                            stroke-width="2" />
+                        <circle cx="130" cy="190" r="18" fill="#047857" />
+                        <text x="130" y="196" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff"
+                            text-anchor="middle">VG</text>
+                        <rect x="170" y="175" width="120" height="12" rx="4" fill="#1f2937" />
+                        <rect x="170" y="193" width="80" height="8" rx="4" fill="#9ca3af" />
+                        <rect x="580" y="175" width="100" height="30" rx="8" fill="#10b981" />
+                        <text x="630" y="194" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff"
+                            text-anchor="middle">Active</text>
+
+                        <!-- Employee 2 -->
+                        <rect x="90" y="240" width="620" height="60" rx="10" fill="#f9fafb" stroke="#f3f4f6"
+                            stroke-width="2" />
+                        <circle cx="130" cy="270" r="18" fill="#6b7280" />
+                        <text x="130" y="276" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff"
+                            text-anchor="middle">JD</text>
+                        <rect x="170" y="255" width="150" height="12" rx="4" fill="#1f2937" />
+                        <rect x="170" y="273" width="90" height="8" rx="4" fill="#9ca3af" />
+                        <rect x="580" y="255" width="100" height="30" rx="8" fill="#10b981" />
+                        <text x="630" y="274" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff"
+                            text-anchor="middle">Active</text>
+
+                        <!-- Employee 3 -->
+                        <rect x="90" y="320" width="620" height="60" rx="10" fill="#f9fafb" stroke="#f3f4f6"
+                            stroke-width="2" />
+                        <circle cx="130" cy="350" r="18" fill="#6b7280" />
+                        <text x="130" y="356" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff"
+                            text-anchor="middle">AS</text>
+                        <rect x="170" y="335" width="100" height="12" rx="4" fill="#1f2937" />
+                        <rect x="170" y="353" width="70" height="8" rx="4" fill="#9ca3af" />
+                        <rect x="580" y="335" width="100" height="30" rx="8" fill="#6b7280" />
+                        <text x="630" y="354" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff"
+                            text-anchor="middle">Inactive</text>
+                    </svg>
+                </div>
+                <!-- Right: Content -->
+                <div class="lg:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Employee Management System</h3>
+                        <!-- Tags -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">React</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">Java
+                                EE</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">RESTful
+                                API</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">SQL
+                                Database</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">OOD</span>
+                        </div>
+                        <!-- Description -->
+                        <p class="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
+                            An administrative dashboard application for managing human resources. Features secure
+                            role-based API access, database relational design for transactional integrity, and reactive
+                            dashboards for searching, filtering, and modifying records dynamically.
+                        </p>
+                        <!-- Bullet Highlights -->
+                        <ul class="list-disc pl-5 space-y-1.5 text-xs md:text-sm text-gray-600 mb-6">
+                            <li><strong>Backend Services</strong>: Developed a secure RESTful API using Java and OOD
+                                principles to manage employee records, department structures, and roles.</li>
+                            <li><strong>Database Integration</strong>: Designed a relational database schema (SQL) with
+                                efficient queries, ensuring transactional consistency and data integrity.</li>
+                            <li><strong>Frontend Dashboard</strong>: Constructed an intuitive administrative dashboard
+                                in React to search, filter, and modify records in real-time.</li>
+                        </ul>
+                    </div>
+                    <!-- CTA Source Code Link -->
+                    <div class="flex items-center gap-4">
+                        <a href="https://github.com/VedantGadekar08/Employee-Management-System.git" target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-emerald-700 hover:text-emerald-800 font-bold text-sm transition-colors duration-200">
+                            <svg class="w-5 h-5 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            Source Code <i class="fa-solid fa-link ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Smart Student Tracker -->
+            <div
+                class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden flex flex-col lg:flex-row-reverse hover:shadow-xl transition-shadow duration-300">
+                <!-- Left: Illustration -->
+                <div
+                    class="lg:w-1/2 bg-gradient-to-br from-emerald-700/10 to-teal-700/5 p-8 flex items-center justify-center min-h-[300px] border-l border-gray-100">
+                    <!-- Clean SVG Illustration of Student Progress Charting -->
+                    <svg viewBox="0 0 800 500" class="w-full max-w-[450px] drop-shadow-md">
+                        <!-- Browser Window -->
+                        <rect x="50" y="50" width="700" height="400" rx="20" fill="#ffffff" stroke="#10b981"
+                            stroke-width="4" />
+                        <rect x="50" y="50" width="700" height="70" rx="20" fill="#047857" />
+                        <!-- Topbar dots -->
+                        <circle cx="90" cy="85" r="8" fill="#ef4444" />
+                        <circle cx="115" cy="85" r="8" fill="#f59e0b" />
+                        <circle cx="140" cy="85" r="8" fill="#10b981" />
+                        <text x="400" y="92" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff"
+                            text-anchor="middle">Student Progress Analytics</text>
+
+                        <!-- Bar Chart Graphic -->
+                        <!-- Grid lines -->
+                        <line x1="120" y1="180" x2="680" y2="180" stroke="#f3f4f6" stroke-width="3" />
+                        <line x1="120" y1="250" x2="680" y2="250" stroke="#f3f4f6" stroke-width="3" />
+                        <line x1="120" y1="320" x2="680" y2="320" stroke="#f3f4f6" stroke-width="3" />
+                        <line x1="120" y1="390" x2="680" y2="390" stroke="#9ca3af" stroke-width="4" />
+
+                        <!-- Bars -->
+                        <!-- Bar 1 (Math) -->
+                        <rect x="180" y="240" width="60" height="150" rx="6" fill="#10b981" />
+                        <text x="210" y="420" font-family="sans-serif" font-size="16" font-weight="bold" fill="#374151"
+                            text-anchor="middle">Math</text>
+                        <text x="210" y="225" font-family="sans-serif" font-size="14" font-weight="bold" fill="#10b981"
+                            text-anchor="middle">85%</text>
+
+                        <!-- Bar 2 (Science) -->
+                        <rect x="300" y="200" width="60" height="190" rx="6" fill="#047857" />
+                        <text x="330" y="420" font-family="sans-serif" font-size="16" font-weight="bold" fill="#374151"
+                            text-anchor="middle">Science</text>
+                        <text x="330" y="185" font-family="sans-serif" font-size="14" font-weight="bold" fill="#047857"
+                            text-anchor="middle">92%</text>
+
+                        <!-- Bar 3 (English) -->
+                        <rect x="420" y="270" width="60" height="120" rx="6" fill="#34d399" />
+                        <text x="450" y="420" font-family="sans-serif" font-size="16" font-weight="bold" fill="#374151"
+                            text-anchor="middle">English</text>
+                        <text x="450" y="255" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399"
+                            text-anchor="middle">78%</text>
+
+                        <!-- Bar 4 (History) -->
+                        <rect x="540" y="220" width="60" height="170" rx="6" fill="#065f46" />
+                        <text x="570" y="420" font-family="sans-serif" font-size="16" font-weight="bold" fill="#374151"
+                            text-anchor="middle">History</text>
+                        <text x="570" y="205" font-family="sans-serif" font-size="14" font-weight="bold" fill="#065f46"
+                            text-anchor="middle">88%</text>
+                    </svg>
+                </div>
+                <!-- Right: Content -->
+                <div class="lg:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Smart Student Tracker</h3>
+                        <!-- Tags -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">React</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">Java
+                                API</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">Data
+                                Analytics</span>
+                            <span
+                                class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">TDD
+                                Testing</span>
+                            <span class="bg-emerald-50 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md">UI
+                                Charting</span>
+                        </div>
+                        <!-- Description -->
+                        <p class="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
+                            A educational metrics and tracking application designed to monitor academic attendance,
+                            performance trends, and key metrics. Incorporates test-driven development strategies to
+                            ensure core systems are bug-free and charts to support data visualization.
+                        </p>
+                        <!-- Bullet Highlights -->
+                        <ul class="list-disc pl-5 space-y-1.5 text-xs md:text-sm text-gray-600 mb-6">
+                            <li><strong>Full-Stack Architecture</strong>: Engineered a web application using React and a
+                                Java back-end to track student attendance, performance trends, and metrics.</li>
+                            <li><strong>Data Analytics & UI</strong>: Integrated charting components to visualize
+                                academic progress patterns and identify students needing attention.</li>
+                            <li><strong>Quality Assurance</strong>: Conducted unit and system testing using test-driven
+                                development methodologies to deliver a highly reliable product.</li>
+                        </ul>
+                    </div>
+                    <!-- CTA Source Code Link -->
+                    <div class="flex items-center gap-4">
+                        <a href="https://github.com/VedantGadekar08/Smart-Student-Career-Tracker.git" target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-emerald-700 hover:text-emerald-800 font-bold text-sm transition-colors duration-200">
+                            <svg class="w-5 h-5 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            Source Code <i class="fa-solid fa-link ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="min-h-screen px-6 md:px-12 py-20 bg-emerald-50/30 flex flex-col justify-center" id="contact">
+        <!-- Section Header -->
+        <div class="flex items-center gap-4 mb-12">
+            <hr class="h-1.5 w-16 bg-emerald-700 rounded-full border-0">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">&lt;Contact /&gt;</h2>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-12 max-w-5xl mx-auto w-full">
+            <!-- Left: SVG Email Illustration -->
+            <div class="lg:w-5/12 flex justify-center max-lg:hidden">
+                <svg viewBox="0 0 500 500" class="w-full max-w-[360px] drop-shadow-lg">
+                    <!-- Envelope -->
+                    <rect x="50" y="150" width="400" height="260" rx="15" fill="#ffffff" stroke="#10b981"
+                        stroke-width="4" />
+                    <path d="M50 160 L250 290 L450 160" fill="none" stroke="#10b981" stroke-width="4"
+                        stroke-linejoin="round" />
+                    <path d="M50 400 L180 270" fill="none" stroke="#10b981" stroke-width="4" />
+                    <path d="M450 400 L320 270" fill="none" stroke="#10b981" stroke-width="4" />
+                    <!-- Letter peaking out -->
+                    <path d="M120 150 L120 70 L380 70 L380 150" fill="#ffffff" stroke="#10b981" stroke-width="4" />
+                    <line x1="160" y1="95" x2="340" y2="95" stroke="#047857" stroke-width="3" stroke-linecap="round" />
+                    <line x1="160" y1="120" x2="280" y2="120" stroke="#34d399" stroke-width="3"
+                        stroke-linecap="round" />
+                    <!-- Small hearts/sparkles -->
+                    <path d="M100 45 Q90 30 75 45 T100 70 T125 45 Q110 30 100 45" fill="#ef4444" />
+                    <polygon points="410,60 415,75 430,75 418,85 422,100 410,90 398,100 402,85 390,75 405,75"
+                        fill="#f59e0b" />
+                </svg>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="lg:w-7/12 w-full bg-white p-6 md:p-8 rounded-2xl shadow-md border border-emerald-50">
+                <form id="contactForm" class="space-y-5">
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-semibold text-gray-700">Name</label>
+                        <input type="text" id="name" required
+                            class="shadow-sm bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-2 focus:ring-emerald-700/20 focus:border-emerald-700 block w-full p-3 outline-none transition-all"
+                            placeholder="Enter your name here">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-semibold text-gray-700">Email</label>
+                        <input type="email" id="email" required
+                            class="shadow-sm bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-2 focus:ring-emerald-700/20 focus:border-emerald-700 block w-full p-3 outline-none transition-all"
+                            placeholder="Enter your email here">
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-semibold text-gray-700">Message</label>
+                        <textarea id="message" rows="5" required
+                            class="shadow-sm bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-2 focus:ring-emerald-700/20 focus:border-emerald-700 block w-full p-3 outline-none transition-all resize-none"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl shadow-md transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-emerald-950 text-emerald-100 pt-16 pb-8 px-6 md:px-12 overflow-hidden">
+        <!-- Background Wave Layer (SVG) -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none"
+                class="relative block w-full h-[40px] text-gray-50 fill-current">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 border-b border-emerald-900/60 pb-12">
+            <!-- Col 1: Hometown -->
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                <span class="text-white font-bold text-lg mb-3 tracking-wide">HOMETOWN</span>
+                <span class="flex items-center gap-2 text-emerald-200">
+                    <i class="fa-solid fa-location-dot text-emerald-500 text-lg"></i>
+                    <address class="not-italic text-sm">Amravati, Maharashtra, India</address>
+                </span>
+            </div>
+            <!-- Col 2: Contact Info -->
+            <div class="flex flex-col items-center text-center">
+                <span class="text-white font-bold text-lg mb-3 tracking-wide">GET IN TOUCH</span>
+                <div class="space-y-2 text-sm text-emerald-200">
+                    <span class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-envelope text-emerald-500"></i>
+                        <a href="mailto:vedantgadekar06@gmail.com"
+                            class="hover:text-white transition-colors">vedantgadekar06@gmail.com</a>
+                    </span>
+                    <span class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone text-emerald-500"></i>
+                        <a href="tel:+919075022638" class="hover:text-white transition-colors">+91 90750 22638</a>
+                    </span>
+                </div>
+            </div>
+            <!-- Col 3: Social Connections -->
+            <div class="flex flex-col items-center md:items-end text-center md:text-right">
+                <span class="text-white font-bold text-lg mb-3 tracking-wide">CONNECT</span>
+                <div class="flex gap-4">
+                    <a href="https://www.linkedin.com/in/vedant-gadekar" target="_blank" rel="noopener noreferrer"
+                        class="text-emerald-300 hover:text-white text-xl transition-colors">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/VedantGadekar08" target="_blank" rel="noopener noreferrer"
+                        class="text-emerald-300 hover:text-white text-xl transition-colors">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/vedanttgadekar" target="_blank" rel="noopener noreferrer"
+                        class="text-emerald-300 hover:text-white text-xl transition-colors">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-emerald-500">
+            <p>&copy; 2026 Vedant Gadekar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Form Submit and Resume Actions JavaScript -->
+    <script>
+        // Form Submission Handler
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert(`Thank you, ${document.getElementById('name').value}! Your message has been sent successfully.`);
+            contactForm.reset();
+        });
+
+    </script>
+</body>
+
+</html>
