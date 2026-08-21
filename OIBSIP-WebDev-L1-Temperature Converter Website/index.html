@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Temperature Converter</title>
+  <!-- Google Fonts for a clean, modern look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="converter-container">
+    <header class="converter-header">
+      <h1>TempShift</h1>
+      <p>Quick, precise temperature conversions with physics-boundary checks.</p>
+    </header>
+
+    <section class="converter-card">
+      <!-- Input Group -->
+      <div class="input-group">
+        <label for="temp-input">Enter Temperature</label>
+        <div class="input-wrapper">
+          <input type="text" id="temp-input" placeholder="e.g., 25" autocomplete="off" aria-describedby="error-message">
+          <select id="unit-select" aria-label="Temperature unit selection">
+            <option value="C" selected>&deg;C (Celsius)</option>
+            <option value="F">&deg;F (Fahrenheit)</option>
+            <option value="K">K (Kelvin)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Action Area -->
+      <button id="convert-btn" class="btn-primary">Convert</button>
+
+      <!-- Feedback / Error messages -->
+      <div id="error-message" class="error-box hidden" role="alert"></div>
+
+      <!-- Results Display (Shows all other conversions simultaneously) -->
+      <div id="results-section" class="results-container hidden">
+        <h2>Conversions</h2>
+        <div class="results-grid">
+          <div class="result-item" id="result-c">
+            <span class="result-label">Celsius</span>
+            <span class="result-value">--</span>
+          </div>
+          <div class="result-item" id="result-f">
+            <span class="result-label">Fahrenheit</span>
+            <span class="result-value">--</span>
+          </div>
+          <div class="result-item" id="result-k">
+            <span class="result-label">Kelvin</span>
+            <span class="result-value">--</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>TempShift &copy; 2026</p>
+  </footer>
+
+  <!-- Script logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
