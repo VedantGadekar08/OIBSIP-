@@ -1,0 +1,321 @@
+/* Modern Calculator Stylesheet */
+
+/* Custom CSS Variables for Theme Management */
+:root {
+  /* Dark Theme Colors (Default) */
+  --bg-primary: #0f172a;
+  --bg-calculator: #1e293b;
+  --bg-display: #0f172a;
+  --border-color: rgba(255, 255, 255, 0.05);
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  
+  --btn-num-bg: #334155;
+  --btn-num-hover: #475569;
+  --btn-num-text: #f8fafc;
+  
+  --btn-operator-bg: #f97316;
+  --btn-operator-hover: #ea580c;
+  --btn-operator-text: #ffffff;
+  
+  --btn-action-bg: #475569;
+  --btn-action-hover: #64748b;
+  --btn-action-text: #f8fafc;
+  
+  --btn-equals-bg: #10b981;
+  --btn-equals-hover: #059669;
+  --btn-equals-text: #ffffff;
+  
+  --shadow-calculator: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --shadow-display: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-btn: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Light Theme Variables */
+body.light-theme {
+  --bg-primary: #f1f5f9;
+  --bg-calculator: #ffffff;
+  --bg-display: #f8fafc;
+  --border-color: rgba(0, 0, 0, 0.06);
+  
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  
+  --btn-num-bg: #e2e8f0;
+  --btn-num-hover: #cbd5e1;
+  --btn-num-text: #0f172a;
+  
+  --btn-operator-bg: #3b82f6;
+  --btn-operator-hover: #2563eb;
+  --btn-operator-text: #ffffff;
+  
+  --btn-action-bg: #cbd5e1;
+  --btn-action-hover: #94a3b8;
+  --btn-action-text: #0f172a;
+  
+  --btn-equals-bg: #10b981;
+  --btn-equals-hover: #059669;
+  --btn-equals-text: #ffffff;
+  
+  --shadow-calculator: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-display: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-btn: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  user-select: none; /* Prevent accidental text highlighting during rapid clicks */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  padding: 20px;
+}
+
+/* Calculator Card Container */
+.calculator-container {
+  width: 100%;
+  max-width: 380px;
+  background-color: var(--bg-calculator);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow-calculator);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Theme Switcher Styles */
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: -5px;
+}
+
+.toggle-icon {
+  font-size: 1.1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #475569;
+  transition: 0.3s;
+  border-radius: 24px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .slider {
+  background-color: #3b82f6;
+}
+
+input:focus-visible + .slider {
+  outline: 2px solid var(--btn-operator-bg);
+  outline-offset: 2px;
+}
+
+input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+/* Display Screen styles */
+.display {
+  background-color: var(--bg-display);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 120px;
+  box-shadow: var(--shadow-display);
+  word-wrap: break-word;
+  word-break: break-all;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+.previous-operand {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  min-height: 24px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: color 0.4s ease;
+  text-align: right;
+  width: 100%;
+}
+
+.current-operand {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.2;
+  transition: color 0.4s ease, font-size 0.15s ease;
+  text-align: right;
+  width: 100%;
+}
+
+.current-operand.error-text {
+  color: #ef4444;
+}
+
+.current-operand.flash-error {
+  animation: shake 0.2s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+
+/* Button Layout with CSS Grid */
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+}
+
+/* Base Button Styles */
+.btn {
+  border: none;
+  outline: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 16px;
+  height: 64px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+  box-shadow: var(--shadow-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Active pressed state for keyboard click feedback */
+.btn:active,
+.btn.active-click {
+  transform: scale(0.94);
+  box-shadow: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: -2px;
+}
+
+/* Number Button Styles */
+.num-btn {
+  background-color: var(--btn-num-bg);
+  color: var(--btn-num-text);
+}
+
+.num-btn:hover {
+  background-color: var(--btn-num-hover);
+}
+
+/* Double column width for number 0 */
+.double-wide {
+  grid-column: span 2;
+}
+
+/* Operator Button Styles */
+.operator-btn {
+  background-color: var(--btn-operator-bg);
+  color: var(--btn-operator-text);
+  font-weight: 600;
+}
+
+.operator-btn:hover {
+  background-color: var(--btn-operator-hover);
+}
+
+/* Action Button Styles (C, Backspace) */
+.action-btn {
+  background-color: var(--btn-action-bg);
+  color: var(--btn-action-text);
+}
+
+.action-btn:hover {
+  background-color: var(--btn-action-hover);
+}
+
+/* Equals Button Styles */
+.equals-btn {
+  background-color: var(--btn-equals-bg);
+  color: var(--btn-equals-text);
+  font-weight: 600;
+}
+
+.equals-btn:hover {
+  background-color: var(--btn-equals-hover);
+}
+
+/* Custom responsiveness for smaller screens */
+@media (max-height: 600px) {
+  body {
+    padding: 10px;
+  }
+  .calculator-container {
+    padding: 16px;
+    gap: 12px;
+  }
+  .display {
+    min-height: 90px;
+    padding: 12px 16px;
+  }
+  .current-operand {
+    font-size: 1.8rem;
+  }
+  .btn {
+    height: 52px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+  }
+}
