@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Turing - The Architect of the Digital Age</title>
-    
+
     <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
+
     <!-- Custom Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Material Symbols Outlined for Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
     <!-- Custom Stylesheet link -->
     <link rel="stylesheet" href="styles.css">
 
@@ -69,30 +73,40 @@
         }
     </script>
 </head>
+
 <body class="bg-background text-on-background font-body-md antialiased">
 
     <!-- Top Navigation Bar -->
     <header class="bg-surface-container-lowest border-b border-outline-variant sticky top-0 z-50 shadow-sm">
-        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-            <a href="#" class="font-headline-md text-2xl font-bold tracking-tight text-primary hover:opacity-85 transition-opacity">
+        <div
+            class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+            <a href="#"
+                class="font-headline-md text-2xl font-bold tracking-tight text-primary hover:opacity-85 transition-opacity">
                 ALAN TURING
             </a>
             <nav class="hidden md:flex gap-gutter items-center">
-                <a class="text-primary border-b-2 border-primary pb-1 font-label-sm text-xs hover:opacity-80 transition-opacity duration-300" href="#biography">Biography</a>
-                <a class="text-secondary hover:text-primary font-label-sm text-xs transition-colors duration-300" href="#timeline">Timeline</a>
-                <a class="text-secondary hover:text-primary font-label-sm text-xs transition-colors duration-300" href="#achievements">Achievements</a>
-                <a class="text-secondary hover:text-primary font-label-sm text-xs transition-colors duration-300" href="#quote">Quote</a>
+                <a class="text-primary border-b-2 border-primary pb-1 font-label-sm text-xs hover:opacity-80 transition-opacity duration-300"
+                    href="#biography">Biography</a>
+                <a class="text-secondary hover:text-primary font-label-sm text-xs transition-colors duration-300"
+                    href="#timeline">Timeline</a>
+                <a class="text-secondary hover:text-primary font-label-sm text-xs transition-colors duration-300"
+                    href="#achievements">Achievements</a>
+                <a class="text-secondary hover:text-primary font-label-sm text-xs transition-colors duration-300"
+                    href="#quote">Quote</a>
             </nav>
-            <button class="hidden md:block bg-primary text-white px-5 py-2 text-xs font-semibold rounded shadow-[0_4px_6px_-1px_rgba(15,23,42,0.04)] hover:bg-opacity-90 hover:translate-y-[-1px] transition-all duration-300">
+            <button
+                class="hidden md:block bg-primary text-white px-5 py-2 text-xs font-semibold rounded shadow-[0_4px_6px_-1px_rgba(15,23,42,0.04)] hover:bg-opacity-90 hover:translate-y-[-1px] transition-all duration-300">
                 Turing Foundation
             </button>
-            <button id="mobile-menu-btn" class="md:hidden text-primary focus:outline-none" aria-label="Toggle mobile menu">
+            <button id="mobile-menu-btn" class="md:hidden text-primary focus:outline-none"
+                aria-label="Toggle mobile menu">
                 <span class="material-symbols-outlined text-2xl">menu</span>
             </button>
         </div>
-        
+
         <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant px-margin-mobile py-4 space-y-3">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant px-margin-mobile py-4 space-y-3">
             <a class="block text-primary font-semibold text-sm py-1" href="#biography">Biography</a>
             <a class="block text-secondary hover:text-primary text-sm py-1" href="#timeline">Timeline</a>
             <a class="block text-secondary hover:text-primary text-sm py-1" href="#achievements">Achievements</a>
@@ -105,63 +119,95 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="relative pt-16 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+        <section
+            class="relative pt-16 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
             <div class="md:col-span-7 space-y-8 z-10">
-                <h1 class="font-display-lg text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-primary leading-tight">
+                <h1
+                    class="font-display-lg text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-primary leading-tight">
                     Alan Turing
                 </h1>
-                <p class="font-body-lg text-lg md:text-xl text-secondary max-w-lg border-l-2 border-outline-variant pl-4 leading-relaxed">
+                <p
+                    class="font-body-lg text-lg md:text-xl text-secondary max-w-lg border-l-2 border-outline-variant pl-4 leading-relaxed">
                     The Architect of the Digital Age & Hero of Bletchley Park
                 </p>
                 <div class="pt-4 flex gap-4">
-                    <a class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-sm text-xs rounded hover:translate-y-[-2px] transition-transform shadow-md" href="#biography">
+                    <a class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-sm text-xs rounded hover:translate-y-[-2px] transition-transform shadow-md"
+                        href="#biography">
                         Explore Biography <span class="material-symbols-outlined text-sm">arrow_downward</span>
                     </a>
-                    <a class="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 font-label-sm text-xs rounded hover:bg-primary hover:text-white transition-all" href="#timeline">
+                    <a class="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 font-label-sm text-xs rounded hover:bg-primary hover:text-white transition-all"
+                        href="#timeline">
                         View Timeline
                     </a>
                 </div>
             </div>
             <div class="md:col-span-5 mt-12 md:mt-0 relative">
-                <div class="absolute inset-0 bg-secondary-container rounded-xl translate-x-4 translate-y-4 -z-10 opacity-70"></div>
-                <img class="w-full h-auto object-cover rounded-xl shadow-lg border border-outline-variant grayscale sepia-[.15]" 
-                     alt="Photographic portrait of Alan Turing taken in 1951, showing him looking thoughtful. The image is styled in high contrast monochrome to match the modernist aesthetic." 
-                     src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Alan_Turing_%281951%29.jpg">
+                <div
+                    class="absolute inset-0 bg-secondary-container rounded-xl translate-x-4 translate-y-4 -z-10 opacity-70">
+                </div>
+                <img class="w-full h-auto object-cover rounded-xl shadow-lg border border-outline-variant grayscale sepia-[.15]"
+                    alt="Photographic portrait of Alan Turing taken in 1951, showing him looking thoughtful. The image is styled in high contrast monochrome to match the modernist aesthetic."
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Alan_Turing_%281951%29.jpg">
             </div>
         </section>
 
         <!-- Biography Section -->
-        <section class="bg-surface-container-lowest py-24 md:py-32 px-margin-mobile md:px-margin-desktop relative" id="biography">
+        <section class="bg-surface-container-lowest py-24 md:py-32 px-margin-mobile md:px-margin-desktop relative"
+            id="biography">
             <!-- Math Grid overlay -->
             <div class="absolute inset-0 math-bg opacity-30 pointer-events-none"></div>
             <div class="max-w-container-max mx-auto relative z-10">
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
                     <div class="md:col-span-4">
                         <div class="sticky top-32">
-                            <h2 class="font-headline-md text-3xl md:text-4xl text-primary font-bold mb-4">The Mathematical Mind</h2>
+                            <h2 class="font-headline-md text-3xl md:text-4xl text-primary font-bold mb-4">The
+                                Mathematical Mind</h2>
                             <div class="w-12 h-1 bg-primary mb-6"></div>
-                            <p class="text-sm font-label-sm text-secondary uppercase tracking-wider">A life dedicated to code, machines, and the boundaries of human thought.</p>
+                            <p class="text-sm font-label-sm text-secondary uppercase tracking-wider">A life dedicated to
+                                code, machines, and the boundaries of human thought.</p>
                         </div>
                     </div>
-                    <div class="md:col-span-8 space-y-8 font-body-lg text-base md:text-lg text-secondary leading-relaxed">
+                    <div
+                        class="md:col-span-8 space-y-8 font-body-lg text-base md:text-lg text-secondary leading-relaxed">
                         <p>
-                            Born in London in 1912, Alan Turing exhibited an extraordinary mathematical brilliance from a young age. His academic journey at King's College, Cambridge, culminated in the seminal 1936 paper, <em>"On Computable Numbers,"</em> where he conceptualized the 'Turing Machine.' This theoretical device laid the absolute foundation for modern computer science, proving that a machine could process any computable mathematical function given enough time and memory.
+                            Born in London in 1912, Alan Turing exhibited an extraordinary mathematical brilliance from
+                            a young age. His academic journey at King's College, Cambridge, culminated in the seminal
+                            1936 paper, <em>"On Computable Numbers,"</em> where he conceptualized the 'Turing Machine.'
+                            This theoretical device laid the absolute foundation for modern computer science, proving
+                            that a machine could process any computable mathematical function given enough time and
+                            memory.
                         </p>
-                        
+
                         <!-- Highlighted wartime container -->
                         <div class="p-6 bg-background rounded-lg border border-outline-variant my-8 shadow-sm">
-                            <h3 class="font-bold text-primary mb-2 text-base md:text-lg">Breaking Enigma at Bletchley Park</h3>
+                            <h3 class="font-bold text-primary mb-2 text-base md:text-lg">Breaking Enigma at Bletchley
+                                Park</h3>
                             <p class="text-sm md:text-base">
-                                During the dark days of World War II, Turing's intellect proved critical to the Allied war effort. Relocating to Bletchley Park, he became the leading force in Hut 8, the section responsible for German naval cryptanalysis. Turing designed the Bombe, an electromechanical machine that systematically narrowed down the daily settings of the Enigma machine, an achievement that historians estimate shortened the war by years and saved millions of lives.
+                                During the dark days of World War II, Turing's intellect proved critical to the Allied
+                                war effort. Relocating to Bletchley Park, he became the leading force in Hut 8, the
+                                section responsible for German naval cryptanalysis. Turing designed the Bombe, an
+                                electromechanical machine that systematically narrowed down the daily settings of the
+                                Enigma machine, an achievement that historians estimate shortened the war by years and
+                                saved millions of lives.
                             </p>
                         </div>
-                        
+
                         <p>
-                            Post-war, his visionary mind pivoted towards the nascent field of artificial intelligence. In 1950, he published <em>"Computing Machinery and Intelligence,"</em> famously proposing what is now known as the 'Turing Test'—a criterion of intelligence wherein a computer's behavior is indistinguishable from that of a human. His work also explored early neural networks and morphological development, conceptualizing ideas decades ahead of their technological realization.
+                            Post-war, his visionary mind pivoted towards the nascent field of artificial intelligence.
+                            In 1950, he published <em>"Computing Machinery and Intelligence,"</em> famously proposing
+                            what is now known as the 'Turing Test'—a criterion of intelligence wherein a computer's
+                            behavior is indistinguishable from that of a human. His work also explored early neural
+                            networks and morphological development, conceptualizing ideas decades ahead of their
+                            technological realization.
                         </p>
-                        
+
                         <p>
-                            Despite his monumental contributions to humanity, Turing's life was tragically cut short. Prosecuted in 1952 for homosexuality under Victorian-era laws, he endured chemical castration rather than prison, dying in 1954 from cyanide poisoning in what was officially ruled a suicide. It wasn't until 2013 that he received a posthumous Royal Pardon, cementing his legacy not just as a pioneer of computer science, but as a symbol of the struggle for human rights and intellectual freedom.
+                            Despite his monumental contributions to humanity, Turing's life was tragically cut short.
+                            Prosecuted in 1952 for homosexuality under Victorian-era laws, he endured chemical
+                            castration rather than prison, dying in 1954 from cyanide poisoning in what was officially
+                            ruled a suicide. It wasn't until 2013 that he received a posthumous Royal Pardon, cementing
+                            his legacy not just as a pioneer of computer science, but as a symbol of the struggle for
+                            human rights and intellectual freedom.
                         </p>
                     </div>
                 </div>
@@ -169,42 +215,62 @@
         </section>
 
         <!-- Timeline Section -->
-        <section class="bg-surface-container-high py-24 md:py-32 px-margin-mobile md:px-margin-desktop border-y border-outline-variant" id="timeline">
+        <section
+            class="bg-surface-container-high py-24 md:py-32 px-margin-mobile md:px-margin-desktop border-y border-outline-variant"
+            id="timeline">
             <div class="max-w-container-max mx-auto animate-fade-in">
                 <div class="text-center mb-16">
-                    <h2 class="font-headline-md text-3xl md:text-4xl text-primary font-bold mb-4">Milestones of Genius</h2>
-                    <p class="font-label-sm text-xs text-secondary uppercase tracking-widest font-semibold">Chronology of Life & Impact</p>
+                    <h2 class="font-headline-md text-3xl md:text-4xl text-primary font-bold mb-4">Milestones of Genius
+                    </h2>
+                    <p class="font-label-sm text-xs text-secondary uppercase tracking-widest font-semibold">Chronology
+                        of Life & Impact</p>
                 </div>
                 <div class="max-w-3xl mx-auto relative">
                     <!-- Vertical Line -->
-                    <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-outline-variant -translate-x-1/2 ml-4 md:ml-0"></div>
-                    
+                    <div
+                        class="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-outline-variant -translate-x-1/2 ml-4 md:ml-0">
+                    </div>
+
                     <!-- Timeline Items -->
                     <div class="space-y-12 relative z-10">
-                        
+
                         <!-- Item 1 -->
                         <div class="flex flex-col md:flex-row items-start md:items-center w-full group">
                             <div class="md:w-1/2 md:pr-12 text-left md:text-right pl-12 md:pl-0 mb-2 md:mb-0 relative">
                                 <div class="timeline-node md:hidden"></div>
-                                <div class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">1912</div>
+                                <div
+                                    class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">
+                                    1912</div>
                             </div>
-                            <div class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow"></div>
-                            <div class="md:w-1/2 pl-12 md:pl-12 bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0">
+                            <div
+                                class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow">
+                            </div>
+                            <div
+                                class="md:w-1/2 pl-12 md:pl-12 bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0">
                                 <p class="text-sm md:text-base text-primary font-semibold">Born in London</p>
-                                <p class="text-xs md:text-sm text-secondary mt-1">Alan Mathison Turing is born, displaying early signs of exceptional mathematical and logical aptitude.</p>
+                                <p class="text-xs md:text-sm text-secondary mt-1">Alan Mathison Turing is born,
+                                    displaying early signs of exceptional mathematical and logical aptitude.</p>
                             </div>
                         </div>
-                        
+
                         <!-- Item 2 -->
                         <div class="flex flex-col md:flex-row items-start md:items-center w-full group">
-                            <div class="md:w-1/2 md:pr-12 text-left md:text-right pl-12 md:pl-0 mb-2 md:mb-0 relative md:order-2">
+                            <div
+                                class="md:w-1/2 md:pr-12 text-left md:text-right pl-12 md:pl-0 mb-2 md:mb-0 relative md:order-2">
                                 <div class="timeline-node md:hidden"></div>
-                                <div class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">1936</div>
+                                <div
+                                    class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">
+                                    1936</div>
                             </div>
-                            <div class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow"></div>
-                            <div class="md:w-1/2 pr-12 md:pr-12 text-left bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0 md:order-1">
-                                <p class="text-sm md:text-base text-primary font-semibold">Conceptualizes the Universal Turing Machine</p>
-                                <p class="text-xs md:text-sm text-secondary mt-1">Publishes 'On Computable Numbers,' introducing the mathematical concept of an all-purpose programmable computer.</p>
+                            <div
+                                class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow">
+                            </div>
+                            <div
+                                class="md:w-1/2 pr-12 md:pr-12 text-left bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0 md:order-1">
+                                <p class="text-sm md:text-base text-primary font-semibold">Conceptualizes the Universal
+                                    Turing Machine</p>
+                                <p class="text-xs md:text-sm text-secondary mt-1">Publishes 'On Computable Numbers,'
+                                    introducing the mathematical concept of an all-purpose programmable computer.</p>
                             </div>
                         </div>
 
@@ -212,25 +278,39 @@
                         <div class="flex flex-col md:flex-row items-start md:items-center w-full group">
                             <div class="md:w-1/2 md:pr-12 text-left md:text-right pl-12 md:pl-0 mb-2 md:mb-0 relative">
                                 <div class="timeline-node md:hidden"></div>
-                                <div class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">1939 - 1945</div>
+                                <div
+                                    class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">
+                                    1939 - 1945</div>
                             </div>
-                            <div class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow"></div>
-                            <div class="md:w-1/2 pl-12 md:pl-12 bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0">
-                                <p class="text-sm md:text-base text-primary font-semibold">Cracking German Naval Codes</p>
-                                <p class="text-xs md:text-sm text-secondary mt-1">Leads Hut 8 at Bletchley Park, designing the Bombe machine to crack the German Enigma cipher system.</p>
+                            <div
+                                class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow">
+                            </div>
+                            <div
+                                class="md:w-1/2 pl-12 md:pl-12 bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0">
+                                <p class="text-sm md:text-base text-primary font-semibold">Cracking German Naval Codes
+                                </p>
+                                <p class="text-xs md:text-sm text-secondary mt-1">Leads Hut 8 at Bletchley Park,
+                                    designing the Bombe machine to crack the German Enigma cipher system.</p>
                             </div>
                         </div>
 
                         <!-- Item 4 -->
                         <div class="flex flex-col md:flex-row items-start md:items-center w-full group">
-                            <div class="md:w-1/2 md:pr-12 text-left md:text-right pl-12 md:pl-0 mb-2 md:mb-0 relative md:order-2">
+                            <div
+                                class="md:w-1/2 md:pr-12 text-left md:text-right pl-12 md:pl-0 mb-2 md:mb-0 relative md:order-2">
                                 <div class="timeline-node md:hidden"></div>
-                                <div class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">1950</div>
+                                <div
+                                    class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">
+                                    1950</div>
                             </div>
-                            <div class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow"></div>
-                            <div class="md:w-1/2 pr-12 md:pr-12 text-left bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0 md:order-1">
+                            <div
+                                class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow">
+                            </div>
+                            <div
+                                class="md:w-1/2 pr-12 md:pr-12 text-left bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0 md:order-1">
                                 <p class="text-sm md:text-base text-primary font-semibold">Launches the Turing Test</p>
-                                <p class="text-xs md:text-sm text-secondary mt-1">Proposes a benchmark for machine intelligence in his paper 'Computing Machinery and Intelligence.'</p>
+                                <p class="text-xs md:text-sm text-secondary mt-1">Proposes a benchmark for machine
+                                    intelligence in his paper 'Computing Machinery and Intelligence.'</p>
                             </div>
                         </div>
 
@@ -238,25 +318,40 @@
                         <div class="flex flex-col md:flex-row items-start md:items-center w-full group">
                             <div class="md:w-1/2 md:pr-12 text-left md:text-right pl-12 md:pl-0 mb-2 md:mb-0 relative">
                                 <div class="timeline-node timeline-node-danger md:hidden"></div>
-                                <div class="font-label-sm text-xs text-on-error-container bg-error-container px-3 py-1 rounded inline-block mb-2 font-bold">1952 - 1954</div>
+                                <div
+                                    class="font-label-sm text-xs text-on-error-container bg-error-container px-3 py-1 rounded inline-block mb-2 font-bold">
+                                    1952 - 1954</div>
                             </div>
-                            <div class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-error border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow"></div>
-                            <div class="md:w-1/2 pl-12 md:pl-12 bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0">
-                                <p class="text-sm md:text-base text-error font-semibold">Prosecution & Tragical Death</p>
-                                <p class="text-xs md:text-sm text-secondary mt-1 font-medium">Prosecuted for homosexuality; forced to undergo chemical castration. Dies under profound duress in 1954.</p>
+                            <div
+                                class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-error border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow">
+                            </div>
+                            <div
+                                class="md:w-1/2 pl-12 md:pl-12 bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0">
+                                <p class="text-sm md:text-base text-error font-semibold">Prosecution & Tragical Death
+                                </p>
+                                <p class="text-xs md:text-sm text-secondary mt-1 font-medium">Prosecuted for
+                                    homosexuality; forced to undergo chemical castration. Dies under profound duress in
+                                    1954.</p>
                             </div>
                         </div>
 
                         <!-- Item 6 -->
                         <div class="flex flex-col md:flex-row items-start md:items-center w-full group">
-                            <div class="md:w-1/2 md:pr-12 text-left md:text-right pl-12 md:pl-0 mb-2 md:mb-0 relative md:order-2">
+                            <div
+                                class="md:w-1/2 md:pr-12 text-left md:text-right pl-12 md:pl-0 mb-2 md:mb-0 relative md:order-2">
                                 <div class="timeline-node md:hidden"></div>
-                                <div class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">2013</div>
+                                <div
+                                    class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-3 py-1 rounded inline-block mb-2 font-bold">
+                                    2013</div>
                             </div>
-                            <div class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow"></div>
-                            <div class="md:w-1/2 pr-12 md:pr-12 text-left bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0 md:order-1">
+                            <div
+                                class="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest z-10 group-hover:scale-125 transition-transform shadow">
+                            </div>
+                            <div
+                                class="md:w-1/2 pr-12 md:pr-12 text-left bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant timeline-card ml-12 md:ml-0 md:order-1">
                                 <p class="text-sm md:text-base text-primary font-semibold">Posthumous Royal Pardon</p>
-                                <p class="text-xs md:text-sm text-secondary mt-1">A Royal Pardon is officially granted to Turing by Queen Elizabeth II, acknowledging the historical injustice.</p>
+                                <p class="text-xs md:text-sm text-secondary mt-1">A Royal Pardon is officially granted
+                                    to Turing by Queen Elizabeth II, acknowledging the historical injustice.</p>
                             </div>
                         </div>
 
@@ -266,15 +361,19 @@
         </section>
 
         <!-- Quote Section -->
-        <section id="quote" class="bg-primary text-white py-24 md:py-32 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+        <section id="quote"
+            class="bg-primary text-white py-24 md:py-32 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
             <!-- Math Grid Overlay for quote background -->
             <div class="absolute inset-0 opacity-10 math-bg bg-white mix-blend-overlay pointer-events-none"></div>
             <div class="max-w-4xl mx-auto text-center relative z-10">
-                <span class="material-symbols-outlined text-6xl md:text-7xl text-tertiary-fixed mb-8 opacity-50 block">format_quote</span>
-                <blockquote class="font-display-lg text-2xl md:text-4xl lg:text-5xl italic leading-relaxed tracking-tight px-4 md:px-12">
+                <span
+                    class="material-symbols-outlined text-6xl md:text-7xl text-tertiary-fixed mb-8 opacity-50 block">format_quote</span>
+                <blockquote
+                    class="font-display-lg text-2xl md:text-4xl lg:text-5xl italic leading-relaxed tracking-tight px-4 md:px-12">
                     "Sometimes it is the people no one can imagine anything of who do the things no one can imagine."
                 </blockquote>
-                <cite class="block mt-12 font-label-sm text-xs md:text-sm text-tertiary-fixed-dim uppercase tracking-widest not-italic">
+                <cite
+                    class="block mt-12 font-label-sm text-xs md:text-sm text-tertiary-fixed-dim uppercase tracking-widest not-italic">
                     — Alan Turing
                 </cite>
             </div>
@@ -283,14 +382,19 @@
 
     <!-- Footer -->
     <footer class="bg-primary-container text-white w-full border-t border-outline/20">
-        <div class="w-full py-12 md:py-16 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter max-w-container-max mx-auto">
-            <div class="font-label-sm text-[10px] md:text-xs font-bold uppercase tracking-widest text-secondary mb-8 md:mb-0 text-center md:text-left">
+        <div
+            class="w-full py-12 md:py-16 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter max-w-container-max mx-auto">
+            <div
+                class="font-label-sm text-[10px] md:text-xs font-bold uppercase tracking-widest text-secondary mb-8 md:mb-0 text-center md:text-left">
                 © 2026 The Turing Archive. Built with Mathematical Modernism.
             </div>
             <div class="flex flex-col md:flex-row gap-6 md:gap-gutter items-center">
-                <a class="text-secondary hover:text-white font-label-sm text-xs hover:translate-y-[-1px] transition-all inline-block" href="https://www.bletchleypark.org.uk/" target="_blank" rel="noopener">Bletchley Park Trust</a>
-                <a class="text-secondary hover:text-white font-label-sm text-xs hover:translate-y-[-1px] transition-all inline-block" href="https://amturing.acm.org/" target="_blank" rel="noopener">ACM Turing Award</a>
-                <a class="text-secondary hover:text-white font-label-sm text-xs hover:translate-y-[-1px] transition-all inline-block" href="https://www.iwm.org.uk/" target="_blank" rel="noopener">Imperial War Museum</a>
+                <a class="text-secondary hover:text-white font-label-sm text-xs hover:translate-y-[-1px] transition-all inline-block"
+                    href="https://www.bletchleypark.org.uk/" target="_blank" rel="noopener">Bletchley Park Trust</a>
+                <a class="text-secondary hover:text-white font-label-sm text-xs hover:translate-y-[-1px] transition-all inline-block"
+                    href="https://amturing.acm.org/" target="_blank" rel="noopener">ACM Turing Award</a>
+                <a class="text-secondary hover:text-white font-label-sm text-xs hover:translate-y-[-1px] transition-all inline-block"
+                    href="https://www.iwm.org.uk/" target="_blank" rel="noopener">Imperial War Museum</a>
             </div>
         </div>
     </footer>
@@ -299,7 +403,7 @@
     <script>
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
-        
+
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
             const icon = btn.querySelector('span');
@@ -320,4 +424,5 @@
         });
     </script>
 </body>
+
 </html>
