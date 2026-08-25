@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Tasks</title>
+    <meta name="description" content="A premium to-do list web app with glassmorphism design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="ri-checkbox-circle-fill"></i>
+                <h1>Flow Tasks</h1>
+            </div>
+            <p class="subtitle">Organize your day with style</p>
+        </header>
+
+        <main>
+            <div class="task-input-section">
+                <form id="task-form">
+                    <div class="input-wrapper">
+                        <i class="ri-edit-2-line input-icon"></i>
+                        <input type="text" id="new-task-input" placeholder="What needs to be done?" autocomplete="off"
+                            required>
+                    </div>
+                    <button type="submit" class="btn-primary" id="add-task-btn">
+                        <i class="ri-add-line"></i> Add Task
+                    </button>
+                </form>
+            </div>
+
+            <div class="task-lists-container">
+                <!-- Pending Tasks -->
+                <section class="task-section" id="pending-section">
+                    <div class="section-header">
+                        <h2>Pending</h2>
+                        <span class="task-count" id="pending-count">0 pending</span>
+                    </div>
+                    <div class="task-list" id="pending-list">
+                        <!-- Tasks will be injected here -->
+                    </div>
+                    <div class="empty-state" id="pending-empty">
+                        <i class="ri-cup-line"></i>
+                        <p>No pending tasks. You're all caught up!</p>
+                    </div>
+                </section>
+
+                <!-- Completed Tasks -->
+                <section class="task-section" id="completed-section">
+                    <div class="section-header">
+                        <h2>Completed</h2>
+                        <span class="task-count" id="completed-count">0 completed</span>
+                    </div>
+                    <div class="task-list" id="completed-list">
+                        <!-- Tasks will be injected here -->
+                    </div>
+                    <div class="empty-state" id="completed-empty">
+                        <i class="ri-check-double-line"></i>
+                        <p>No completed tasks yet. Let's get things done!</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Template for a task item to keep JS cleaner -->
+    <template id="task-template">
+        <div class="task-item">
+            <div class="task-actions-left">
+                <button class="btn-icon btn-check" aria-label="Mark complete" title="Toggle Completion">
+                    <i class="ri-check-line"></i>
+                </button>
+            </div>
+            <div class="task-content">
+                <p class="task-text"></p>
+                <form class="edit-form hidden">
+                    <input type="text" class="edit-input" required>
+                    <button type="submit" class="btn-icon btn-save" title="Save">
+                        <i class="ri-check-line"></i>
+                    </button>
+                    <button type="button" class="btn-icon btn-cancel-edit" title="Cancel">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </form>
+                <div class="task-meta">
+                    <span class="timestamp added-time"><i class="ri-time-line"></i> <span
+                            class="time-text"></span></span>
+                    <span class="timestamp completed-time hidden"><i class="ri-check-double-line"></i> <span
+                            class="time-text"></span></span>
+                </div>
+            </div>
+            <div class="task-actions-right">
+                <button class="btn-icon btn-edit" aria-label="Edit task" title="Edit">
+                    <i class="ri-pencil-line"></i>
+                </button>
+                <button class="btn-icon btn-delete" aria-label="Delete task" title="Delete">
+                    <i class="ri-delete-bin-line"></i>
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
