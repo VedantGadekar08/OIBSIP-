@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div id="message-box" class="message"></div>
+
+    <!-- Login Form -->
+    <div id="login-view">
+      <div class="header">
+        <h1>Welcome Back</h1>
+        <p>Enter your details to access your account.</p>
+      </div>
+      
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-username">Username or Email</label>
+          <input type="text" id="login-username" placeholder="Enter username/email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="Enter password" required>
+        </div>
+        
+        <button type="submit" class="btn">Log In</button>
+      </form>
+      
+      <div class="toggle-form">
+        Don't have an account? <a href="#" id="show-register">Register here</a>
+      </div>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="register-view">
+      <div class="header">
+        <h1>Create Account</h1>
+        <p>Join us to get started today.</p>
+      </div>
+      
+      <form id="register-form">
+        <div class="form-group">
+          <label for="reg-username">Username or Email</label>
+          <input type="text" id="reg-username" placeholder="Choose a username/email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="reg-password">Password</label>
+          <input type="password" id="reg-password" placeholder="Create a password" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="reg-confirm-password">Confirm Password</label>
+          <input type="password" id="reg-confirm-password" placeholder="Confirm your password" required>
+        </div>
+        
+        <button type="submit" class="btn">Register</button>
+      </form>
+      
+      <div class="toggle-form">
+        Already have an account? <a href="#" id="show-login">Log in here</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
